@@ -17,10 +17,10 @@
   "homepage": "https://github.com/p-payet/fizz-buzz-kata",
   "keywords": [
     "kata",
-    "TDD",
+    "tdd",
     "fizz-buzz",
-    "TypeScript",
-    "Jest"
+    "typescript",
+    "jest"
   ],
   "devDependencies": {
     "@jest/globals": "^29.7.0",
