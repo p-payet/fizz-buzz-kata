@@ -19,4 +19,10 @@ describe("Fizz Buzz specification tests", () => {
 
         expect(result).toEqual([1, 2, 'buzz']);
     });
+
+    it("should return 'fizz' instead of 5", () => {
+        const result = fizzBuzz(5);
+
+        expect(result).toEqual([1, 2, 'buzz', 4, 'fizz']);
+    });
 });
