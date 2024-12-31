@@ -1,14 +1,9 @@
-export const fizzBuzz = (num: number): Array<number | 'fizz' | 'buzz' | 'fizzbuzz'> => {
-    if (num < 1) {
-        return [];
-    }
+type FizzBuzz = 'fizz' | 'buzz' | 'fizzbuzz';
 
-    return Array.from({ length: num }, (_, i) => {
-        const n = i + 1;
+export const fizzBuzz = (num: number): Array<number | FizzBuzz> =>
+    num < 1 ? []
+        : Array.from({ length: num }, (_, i) => {
+            const n = i + 1;
 
-        return n % 15 === 0 ? 'fizzbuzz'
-            : n % 3 === 0 ? 'fizz'
-            : n % 5 === 0 ? 'buzz'
-            : n;
-    });
-}
+            return (`${n % 3 === 0 ? 'fizz' : ''}${n % 5 === 0 ? 'buzz' : ''}` || n) as FizzBuzz | number;
+        });
