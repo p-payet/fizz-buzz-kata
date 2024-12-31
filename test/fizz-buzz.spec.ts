@@ -7,4 +7,10 @@ describe("Fizz Buzz specification tests", () => {
 
         expect(result).toEqual([1]);
     });
+
+    it("should return [1, 2]", () => {
+        const result = fizzBuzz(2);
+
+        expect(result).toEqual([1, 2]);
+    });
 });
