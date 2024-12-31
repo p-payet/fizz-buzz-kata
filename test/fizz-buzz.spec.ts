@@ -52,4 +52,10 @@ describe("Fizz Buzz specification tests", () => {
             16, 17, 'fizz', 19, 'buzz', 'fizz', 22, 23, 'fizz', 'buzz', 26, 'fizz', 28, 29, 'fizzbuzz',
         ]);
     });
+
+    it("should return empty array when 0 is passed", () => {
+        const result = fizzBuzz(0);
+
+        expect(result).toEqual([]);
+    });
 });
