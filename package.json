@@ -1,0 +1,31 @@
+{
+  "name": "fizz-buzz-kata",
+  "version": "1.0.0",
+  "description": "Fizz Buzz kata in TypeScript with Jest.",
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/p-payet/fizz-buzz-kata"
+  },
+  "bugs": {
+    "url": "https://github.com/p-payet/fizz-buzz-kata/issues"
+  },
+  "homepage": "https://github.com/p-payet/fizz-buzz-kata",
+  "keywords": [
+    "kata",
+    "TDD",
+    "fizz-buzz",
+    "TypeScript",
+    "Jest"
+  ],
+  "devDependencies": {
+    "@jest/globals": "^29.7.0",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.2.5",
+    "typescript": "^5.7.2"
+  }
+}
