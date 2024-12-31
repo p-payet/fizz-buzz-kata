@@ -58,4 +58,10 @@ describe("Fizz Buzz specification tests", () => {
 
         expect(result).toEqual([]);
     });
+
+    it("should return empty array when -5 is passed", () => {
+        const result = fizzBuzz(-5);
+
+        expect(result).toEqual([]);
+    });
 });
