@@ -1,4 +1,8 @@
-export const fizzBuzz = (num: number): Array<number | 'buzz'> => {
+export const fizzBuzz = (num: number): Array<number | 'buzz' | 'fizz'> => {
     return (num >= 2 ? [...Array(num + 1).keys()].slice(1) : [num])
-        .map(n => n === 3 ? 'buzz': n)
+        .map(n =>
+            n === 3 ? 'buzz'
+                : n === 5 ? 'fizz'
+                : n
+        )
 }
